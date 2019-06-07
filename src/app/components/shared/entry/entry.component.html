@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem; margin-top: 20px;" *ngFor="let entry of this.entryService.entries">
+    <div class="card-body">
+        <h5 class="card-title text-success">{{entry.name | uppercase}}<small class="text-muted"><i> {{entry.productType}} </i></small></h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{entry.user.username}}</h6>
+        <hr>
+        <p class="card-text">{{entry.description}}</p>
+        <button class="btn btn-warning">See more</button>
+    </div>
+</div>

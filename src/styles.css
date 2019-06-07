@@ -9,3 +9,7 @@
 .btn-warning:hover {
     background-color: rgb(212, 187, 57) !important;
 }
+
+.text-success {
+    color: #688C4E !important;
+}

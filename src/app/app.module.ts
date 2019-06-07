@@ -12,6 +12,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 
 // Routes
 import { ROUTES } from './app.routes';
+import { EntryComponent } from './components/shared/entry/entry.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ROUTES } from './app.routes';
     HomeComponent,
     MapComponent,
     SearchComponent,
-    NavbarComponent
+    NavbarComponent,
+    EntryComponent
   ],
   imports: [
     BrowserModule,

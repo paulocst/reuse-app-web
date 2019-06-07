@@ -7,9 +7,18 @@ import { User } from '../../models/user.model';
 })
 export class EntryService {
 
-  user = new User('Pinkman_03');
-  product = new Product('wood', this.user, 'wood in a corner');
+  user: User;
+  product: Product;
+  entries: Product[] = [];
 
-  constructor() { }
+  constructor() {
+    this.user = new User('Pinkman_03');
+    this.product = new Product('wood', this.user, 'wood in a corner');
+    this.setEntry(this.product);
+  }
+
+  setEntry(product: Product) {
+    this.entries.push(product);
+  }
 
 }
